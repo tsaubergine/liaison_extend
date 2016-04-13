@@ -1,0 +1,12 @@
+import "goby/common/protobuf/liaison_config.proto";
+
+extend goby.common.protobuf.LiaisonConfig
+{
+  optional Extend1Config extend1_config = 1200;
+}
+
+message Extend1Config
+{
+    optional int32 timer_freq = 1 [default = 10];
+}
+
